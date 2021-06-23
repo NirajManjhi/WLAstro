@@ -1,7 +1,7 @@
 package com.wl.astro.di.modules
 
-import com.wl.astro.ApiService
 import com.wl.astro.BuildConfig
+import com.wl.astro.common.ApiService
 import com.wl.astro.common.BASE_URL
 import com.wl.astro.rx.SchedulersFacade
 import dagger.Module

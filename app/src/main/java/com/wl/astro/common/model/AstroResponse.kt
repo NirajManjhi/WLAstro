@@ -1,4 +1,4 @@
-package com.wl.astro
+package com.wl.astro.common.model
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName

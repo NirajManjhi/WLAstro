@@ -1,7 +1,7 @@
 package com.wl.astro.di.modules
 
-import com.wl.astro.ApiService
-import com.wl.astro.AppDatabase
+import com.wl.astro.common.ApiService
+import com.wl.astro.common.database.AppDatabase
 import com.wl.astro.repo.HomeRepo
 import dagger.Module
 import dagger.Provides

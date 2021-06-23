@@ -1,5 +1,6 @@
-package com.wl.astro
+package com.wl.astro.common
 
+import com.wl.astro.common.model.AstroResponse
 import io.reactivex.Single
 import retrofit2.http.GET
 import retrofit2.http.Query

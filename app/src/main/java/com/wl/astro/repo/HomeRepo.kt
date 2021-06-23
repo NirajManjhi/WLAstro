@@ -1,8 +1,10 @@
 package com.wl.astro.repo
 
-import com.wl.astro.ApiService
-import com.wl.astro.AppDatabase
-import com.wl.astro.AstroResponse
+import com.wl.astro.common.ApiService
+import com.wl.astro.common.database.AppDatabase
+import com.wl.astro.common.database.AstroTable
+import com.wl.astro.common.model.AstroResponse
+import io.reactivex.Completable
 import io.reactivex.Single
 import javax.inject.Inject
 
@@ -13,5 +15,13 @@ import javax.inject.Inject
 class HomeRepo @Inject constructor(private val apiService: ApiService, private val appDatabase: AppDatabase) {
     fun getAstroData(): Single<AstroResponse?> {
         return apiService.getAstroForToday(apiKey = "wyrlKPkI6AgTt083hbPGacYNRJKbuQfFh1ZmHMd7")
+    }
+
+    fun getLocalAstroForToday(): Single<List<AstroTable>?> {
+        return appDatabase.astroDao.getAstroFromLocal()
+    }
+
+    fun insertAstroDataToLocal(data: AstroTable): Completable {
+        return appDatabase.astroDao.insert(data)
     }
 }

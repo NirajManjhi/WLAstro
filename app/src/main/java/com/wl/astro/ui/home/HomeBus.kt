@@ -9,6 +9,8 @@ import com.wl.astro.rx.RxBus
  */
 class HomeBus private constructor() : RxBus<HomeBus.HomeEvents>() {
     companion object {
+        const val SHOW_HIDE_LOADING = "SHOW_HIDE_LOADING"
+        const val SHOW_SNACKBAR = "SHOW_SNACKBAR"
         private lateinit var INSTANCE: HomeBus
 
         @Synchronized

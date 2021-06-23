@@ -1,8 +1,8 @@
-package com.wl.astro
+package com.wl.astro.common.database
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.wl.astro.AppDatabase.Companion.DATABASE_VERSION
+import com.wl.astro.common.database.AppDatabase.Companion.DATABASE_VERSION
 
 /**
  * Created by NirajM on 22/06/21.
